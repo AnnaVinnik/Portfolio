@@ -4,9 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Vinnik</title>
 </head>
 <body>
-    
+    <header class="header container">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__elem">Главная</li>
+                <li class="nav__elem">Портфолио</li>
+                <li class="nav__elem">Контакты</li>
+                <li class="nav__elem">Обратная связь</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="promo">
+        <div class="wrapper">
+            <div class="container">
+                <div class="promo__photo"></div>
+                <div class="promo__description">
+                    <p class="promo__descriprion_size-big white">I'm a front-end developer</p>
+                    <p class="promo__descriprion_size-middle gold">Anna Vinnik</p>
+                    <p class="promo__descriprion_size-small brown">and this is my portfolio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section class="projects container">
+            <h1 class="heading">Портфолио</h1>
+            <section class="card frame">
+                <img class="card__img" src="" alt="">
+                <div class="card__description">
+                    <div class="button">open it!</div>
+                    <h2 class="card__desription_heading">
+                        На чистом JavaScript:
+                    </h2>
+                    <ul>
+                        <li>автоматическое добавление товаров и слайдера</li>
+                        <li>добавление в корзину</li>
+                        <li>фильтрация товаров</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        <section class="projects frame">
+            <h1 class="heding">Другие проекты</h1>
+            <div class="card__compact">
+                <img class="card-compact__img" src="" alt="">
+                <div class="card-compact__description">
+                    <h2 class="card-compact__desription_heading"></h2>
+                    <ul>
+                        <li>слайдер</li>
+                        <li>добавление в корзину</li>
+                        <li>фильтрациятоваров</li>
+                    </ul>
+                    <div class="button">open it!</div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts container">
+            <h1 class="heading">Связь со мной</h1>
+            <p class="mail">vinnik.anna.mail@gmail.com</p>
+            <p class="text">или</p>
+            <form action="" class="form frame">
+                Имя:
+                <input type="text" name="name">
+                Компания:
+                <input type="text" name="company">
+                Телефон:
+                <input type="text" name="phone">
+                Комментарий:
+                <input type="text" name="comment">
+                <input type="submit" value="отправить" class="button">
+            </form>
+        </section>
+    </main>
 </body>
 </html>
