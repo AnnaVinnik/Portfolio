@@ -15,7 +15,7 @@ main {
 }
 
 .white {
-    color: #CBCBCB;
+    color: #d7d7d7;
 }
 
 .container {
@@ -24,9 +24,9 @@ main {
 }
 
 .button {
-    background-color: #DEC585;
-    color: rgba(0, 0, 0, 0.8);
-    border-radius: 50px;
+    background-color: #7d745b00;
+    color: rgba(255, 255, 255, 0.91);
+    /* border-radius: 50px; */
     padding: 0 50px 10px;
     font-weight: 300;
     font-size: 36px;
@@ -34,7 +34,8 @@ main {
     text-transform: lowercase;
     font-family: 'Oswald', sans-serif;
     line-height: 10px;
-    border: none;
+    letter-spacing: 0.1em;
+    border: 1px solid #eed186;
 }
 
 .button:hover {
@@ -63,25 +64,43 @@ main {
 .nav__list {
     display: flex;
     justify-content: space-around;
-    color: #969696;
     list-style: none;
     letter-spacing: 0.1em;
 }
 
+.nav__elem {
+    color: #a7a6a6;
+    text-decoration: none;
+}
+
 .quotes::before {
     content: " < ";
-    color: #AE8657;
+    color: #615a51;
 }
 
 .quotes::after {
     content: " > ";
-    color: #AE8657;
+    color: #615a51;
+}
+
+.header .quotes::before {
+    content: " < ";
+    color: #ffd3a0;
+}
+
+.header .quotes::after {
+    content: " > ";
+    color: #ffd3a0;
+}
+
+.promo {
+    height: 100vh;
 }
 
 .promo__wrapper {
     font-size: 450px;
     font-family: Oswald;
-    color: rgba(129, 106, 79, 0.14);
+    color: rgba(129, 106, 79, 0.20);
     text-transform: uppercase;
     margin: 0 auto;
     text-align: center;
@@ -140,25 +159,25 @@ main {
 .heading {
     font-size: 48px;
     font-weight: 100;
-    color: #BDBCB8;
+    color: #d3d3d3;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .frame {
-    border: 1px solid #836A4D;
+    border: 1px solid #615a51;
 }
 
 .projects {
     padding: 50px 0;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 .card {
     padding: 55px 60px;
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
 }
 
 .card__img {
@@ -167,7 +186,7 @@ main {
 } 
 
 .card__description {
-    color: #AEABAB;
+    color: #cbcbcb;
     font-size: 24px;
     font-weight: 200;
     width: 380px;
@@ -189,11 +208,6 @@ main {
 .projects__wrapper {
     height: 1000px;
     position: relative;
-}
-
-.card__compact {
-    /* position: relative; */
-    /* top: 50px; */
 }
 
 .card__compact_left {
@@ -220,6 +234,7 @@ main {
     color: #CDC4AE;
     font-weight: 300;
     font-size: 24px;
+    letter-spacing: 0.1em;
 }
 
 .mail {
@@ -232,6 +247,15 @@ main {
 
 .mail::before {
     content: "@: ";
+}
+
+.phone {
+    text-align: center;
+    display: block;
+    color: #747474;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
 }
 
 .text {
@@ -256,10 +280,39 @@ main {
 }
 
 .input {
-    background-color: #DEC585;
-    border-radius: 50px;
+    background-color: #c3b593;
+
     width: 500px;
     height: 65px;
+    border: none;
+    font-size: 24px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+.input:focus {
+    /* border: 2px solid rgb(234, 140, 45); */
+    /* border: none; */
+    outline: none;
+    box-sizing: border-box;
+    background-color: rgb(240, 227, 213);
+}
+
+.input::placeholder {
+    /* color: rgb(165, 165, 165); */
+    font-weight: 100;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+
+.input_big {
+    height: 300px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-content: top;
 }
 
 .input__label {

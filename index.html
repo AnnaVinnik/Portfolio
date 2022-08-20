@@ -15,28 +15,41 @@
         <header class="header container">
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__elem quotes">Главная</li>
-                    <li class="nav__elem quotes">Портфолио</li>
-                    <li class="nav__elem quotes">Контакты</li>
-                    <li class="nav__elem quotes">Обратная связь</li>
+                    <li>
+                        <a class="nav__elem quotes" href="#promo">Главная</a>
+                    </li>
+                    <li>
+                        <a class="nav__elem quotes" href="#projects">Портфолио</a>
+                    </li>
+                    <li>
+                        <a class="nav__elem quotes" href="#contacts">Контакты</a>
+                    </li>
+                    <li>
+                        <a class="nav__elem quotes" href="#contacts">Обратная связь</a>
+                    </li>
                 </ul>
             </nav>
         </header>
-        <section class="promo">
+        <section id="promo" class="promo">
             <div class="promo__wrapper">
                 Vinnik
                 <div class="container promo__content">
                     <div class="promo__photo"></div>
                     <div class="promo__description">
-                        <p class="promo__descriprion_size-big white">I'm <br> A FRONT-END DEVELOPER</p>
+                        <p class="promo__descriprion_size-big white">I'm
+                            <br> A FRONT-END DEVELOPER
+                        </p>
                         <p class="promo__descriprion_size-middle gold">Anna Vinnik</p>
-                        <p class="promo__descriprion_size-small brown">and <br>this is  <br>my portfolio</p>
+                        <p class="promo__descriprion_size-small brown">and
+                            <br>this is
+                            <br>my portfolio
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
         <main>
-            <section class="projects container">
+            <section id="projects" class="projects container">
                 <h1 class="heading quotes">Портфолио</h1>
                 <section class="card frame">
                     <img class="card__img" src="img/project_1.png" alt="">
@@ -54,7 +67,7 @@
                 </section>
                 <section class="card frame">
                     <div class="card__description">
-                        <button class="button">Open it!</button>
+                        <button class="button">Show it!</button>
                         <h2 class="card__desription_heading">
                             На чистом JavaScript:
                         </h2>
@@ -94,20 +107,37 @@
                     </div>
                 </div>
             </section>
-            <section class="contacts container">
+            <section id="contacts" class="contacts container">
                 <h1 class="heading quotes">Связь со мной</h1>
                 <p class="mail">vinnik.anna.mail@gmail.com</p>
+                <a class="phone" href="tel:89137252024">89137252024</a>
                 <p class="text">или</p>
                 <form action="" class="form frame">
                     <laber class="input__label" for="name">Имя:</laber>
-                    <input class="input" type="text" name="name">
+                    <input
+                        class="input"
+                        type="text"
+                        name="name"
+                        placeholder="Винник Анна"
+                    >
                     <label class="input__label" for="company">Компания:</label>
-                    <input class="input" type="text" name="company">
+                    <input
+                        class="input"
+                        type="text"
+                        name="company"
+                        placeholder="Яндекс"
+                    >
                     <label class="input__label" for="phone">Телефон:</label>
-                    <input class="input" type="text" name="phone">
+                    <input
+                        class="input"
+                        type="text"
+                        name="phone"
+                        placeholder="89137252024"
+                    >
                     <label class="input__label" for="comment">Комментарий:</label>
-                    <input class="input" type="text" name="comment"> <br>
-                    <input type="submit" value="отправить" class="button form__button">
+                    <textarea class="input input_big" name="comment" placeholder="Что нибудь еще :)"></textarea>
+                    <br>
+                    <input type="submit" value="Отправить" class="button form__button">
                 </form>
             </section>
         </main>
