@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Vinnik: frontend</title>
+    </head>
+    <body>
+        <header class="header container">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li>
+                        <a class="nav__elem quotes" href="#promo">Главная</a>
+                    </li>
+                    <li>
+                        <a class="nav__elem quotes" href="#projects">Портфолио</a>
+                    </li>
+                    <li>
+                        <a class="nav__elem quotes" href="#contacts">Контакты</a>
+                    </li>
+                    <li>
+                        <a class="nav__elem quotes" href="#contacts">Обратная связь</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section id="promo" class="promo">
+            <div class="promo__wrapper">
+                Vinnik
+                <div class="container promo__content">
+                    <div class="promo__photo"></div>
+                    <div class="promo__description">
+                        <p class="promo__descriprion_size-big white">I'm
+                            <br> A FRONT-END DEVELOPER
+                        </p>
+                        <p class="promo__descriprion_size-middle gold">Anna Vinnik</p>
+                        <p class="promo__descriprion_size-small brown">and
+                            <br>this is
+                            <br>my portfolio
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <main>
+            <section id="projects" class="projects container">
+                <h1 class="heading quotes">Портфолио</h1>
+                <section class="card frame">
+                    <img class="card__img" src="img/project_1.png" alt="">
+                    <div class="card__description">
+                        <button class="button">Open it!</button>
+                        <h2 class="card__desription_heading">
+                            На чистом JavaScript:
+                        </h2>
+                        <ul class="card__description_list">
+                            <li>автоматическое добавление товаров и слайдера</li>
+                            <li>добавление в корзину</li>
+                            <li>фильтрация товаров</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card frame">
+                    <div class="card__description">
+                        <a href="yourflowers" class="button">Show it!</a>
+                        <h2 class="card__desription_heading">
+                            На чистом JavaScript:
+                        </h2>
+                        <ul class="card__description_list">
+                            <li>автоматическое добавление товаров и слайдера</li>
+                            <li>добавление в корзину</li>
+                            <li>фильтрация товаров</li>
+                        </ul>
+                    </div>
+                    <img class="card__img" src="img/project_1.png" alt="">
+                </section>
+            </section>
+            <section class="projects container">
+                <h1 class="heading quotes">Другие проекты</h1>
+                <div class="projects__wrapper frame">
+                    <div class="card__compact card__compact_left">
+                        <img class="card-compact__img" src="img/project_1.png" alt="">
+                        <div class="card-compact__description">
+                            <ul class="card-compact__list">
+                                <li>слайдер</li>
+                                <li>добавление в корзину</li>
+                                <li>фильтрация товаров</li>
+                            </ul>
+                            <button class="button">open it!</button>
+                        </div>
+                    </div>
+                    <div class="card__compact card__compact_right">
+                        <img class="card-compact__img" src="img/project_1.png" alt="">
+                        <div class="card-compact__description">
+                            <ul class="card-compact__list">
+                                <li>слайдер</li>
+                                <li>добавление в корзину</li>
+                                <li>фильтрациятоваров</li>
+                            </ul>
+                            <button class="button">open it!</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contacts" class="contacts container">
+                <h1 class="heading quotes">Связь со мной</h1>
+                <p class="mail">vinnik.anna.mail@gmail.com</p>
+                <a class="phone" href="tel:89137252024">89137252024</a>
+                <p class="text">или</p>
+                <form action="" class="form frame">
+                    <laber class="input__label" for="name">Имя:</laber>
+                    <input
+                        class="input"
+                        type="text"
+                        name="name"
+                        placeholder="Винник Анна"
+                    >
+                    <label class="input__label" for="company">Компания:</label>
+                    <input
+                        class="input"
+                        type="text"
+                        name="company"
+                        placeholder="Яндекс"
+                    >
+                    <label class="input__label" for="phone">Телефон:</label>
+                    <input
+                        class="input"
+                        type="text"
+                        name="phone"
+                        placeholder="89137252024"
+                    >
+                    <label class="input__label" for="comment">Комментарий:</label>
+                    <textarea class="input input_big" name="comment" placeholder="Что нибудь еще :)"></textarea>
+                    <br>
+                    <input type="submit" value="Отправить" class="button form__button">
+                </form>
+            </section>
+        </main>
+        <script src="script/script.js"></script>
+    </body>
+</html>
