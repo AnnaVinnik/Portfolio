@@ -36,6 +36,7 @@ main {
     line-height: 10px;
     letter-spacing: 0.1em;
     border: 1px solid #eed186;
+    text-decoration: none;
 }
 
 .button:hover {
