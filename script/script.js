@@ -32,3 +32,15 @@ const cardCompact = {
 }
 
 cardCompact.toggleDescription();
+
+
+startAnimation();
+
+function startAnimation() {
+    const promo = document.querySelector(".promo__descriprion_size-big");
+    console.log(promo);
+    setTimeout( () => {
+        // promo.style.display = "block";
+        promo.style.left = "0";
+    }, 10 );
+}
