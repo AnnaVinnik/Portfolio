@@ -42,5 +42,6 @@ function startAnimation() {
     setTimeout( () => {
         // promo.style.display = "block";
         promo.style.left = "0";
+        promo.classList.add("white");
     }, 10 );
 }
