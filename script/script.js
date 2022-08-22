@@ -40,8 +40,8 @@ function startAnimation() {
     const promo = document.querySelector(".promo__descriprion_size-big");
     console.log(promo);
     setTimeout( () => {
-        // promo.style.display = "block";
         promo.style.left = "0";
         promo.classList.add("white");
+        promo.style.opacity = "1";
     }, 10 );
 }

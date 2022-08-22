@@ -127,12 +127,13 @@ main {
     top: 0;
     left: 600px;
     /* display: none; */
-    transition: cubic-bezier(.37,.3,.48,1.17) 1s;
+    transition: cubic-bezier(.24,.37,.37,1.33) 1s;
     
     font-size: 80px;
     width: 500px;
     text-align: start;
     text-transform: none;
+    opacity: 0;
 }
 
 .promo__descriprion_size-middle {
