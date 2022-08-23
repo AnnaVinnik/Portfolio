@@ -21,11 +21,11 @@ const cardCompact = {
             
             elem.addEventListener('mouseover', function() {
                 img.style.opacity = "0.3";
-                description.style.display = "block";
+                description.style.opacity = "1";
             });
             elem.addEventListener('mouseout', function() {
                 img.style.opacity = "1";
-                description.style.display = "none";
+                description.style.opacity = "0";
             });
         });
     }

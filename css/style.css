@@ -9,11 +9,11 @@ body {
     overflow-x: hidden;
 }
 
-main {
+/* main {
     background-image: url(../img/Lines.png);
     background-repeat: no-repeat;
     background-position: 25vw 200px;
-}
+} */
 
 .white {
     color: #d7d7d7;
@@ -38,11 +38,18 @@ main {
     letter-spacing: 0.1em;
     border: 1px solid #eed186;
     text-decoration: none;
+    transition: 0.4s;
 }
 
 .button:hover {
-    background-color: #b99f61;
+    /* background-color: #b99f61; */
+    box-shadow: 0 0 5px white, 
+        0 0 1px rgb(255, 221, 0), 
+        inset 0 0 1px rgb(255, 221, 0),
+        inset 0 0 5px white;
+    text-shadow: 0 0 2px rgb(255, 221, 0), 0 0 5px white;
     cursor: pointer;
+    transition: 0.1s;
 }
 
 .header {
@@ -77,22 +84,26 @@ main {
 
 .quotes::before {
     content: " < ";
-    color: #615a51;
+    color: #c38d47;
+    text-shadow: 0 0 5px rgba(251, 251, 251, 0.629);
 }
 
 .quotes::after {
     content: " > ";
-    color: #615a51;
+    color: #c38d47;
+    text-shadow: 0 0 5px rgba(251, 251, 251, 0.629);
 }
 
 .header .quotes::before {
-    content: " < ";
+    content: " <" ;
     color: #ffd3a0;
+    /* font-size: 20px; */
 }
 
 .header .quotes::after {
-    content: " > ";
+    content: "> ";
     color: #ffd3a0;
+    /* font-size: 20px; */
 }
 
 .promo {
@@ -173,6 +184,11 @@ main {
     border: 1px solid #615a51;
 }
 
+.frame:hover {
+    box-shadow: 0 0 2px rgb(81, 75, 62), 
+        inset 0 0 2px rgb(81, 75, 62);
+}
+
 .projects {
     padding: 50px 0;
     margin-bottom: 0px;
@@ -229,6 +245,7 @@ main {
 
 .card-compact__img {
     position: absolute;
+    transition: 0.5s;
 }
 
 .card-compact__description {
@@ -241,7 +258,8 @@ main {
     font-size: 24px;
     letter-spacing: 0.1em;
     width: 400px;
-    display: none;
+    opacity: 0;
+    transition: 0.6s;
 }
 
 .card-compact__list {
@@ -291,17 +309,27 @@ main {
 }
 
 .input {
-    background-color: #c3b593;
+    /* background-color: #c3b593; */
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: 1px solid rgb(187, 164, 108);
+    box-shadow: inset 0px 0px 5px rgb(68, 65, 60);
 
     width: 500px;
     height: 65px;
-    border: none;
     font-size: 24px;
     padding: 0 20px;
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     letter-spacing: 0.1em;
+    color: rgb(192, 190, 190);
+    transition: 0.4s;
+}
+
+.input:hover {
+    box-shadow: inset 0px 0px 5px rgb(122, 117, 105);
+    transition: 0.1s;
 }
 
 .input:focus {
@@ -309,7 +337,9 @@ main {
     /* border: none; */
     outline: none;
     box-sizing: border-box;
-    background-color: rgb(240, 227, 213);
+    color: rgb(213, 213, 213);
+    box-shadow: inset 0px 0px 5px rgb(122, 117, 105);
+    /* background-color: rgb(240, 227, 213); */
 }
 
 .input::placeholder {
@@ -334,5 +364,5 @@ main {
     font-size: 24px;
     margin-top: 30px;
     margin-bottom: 5px;
-    color: rgba(225, 225, 224, 0.8);
+    color: rgba(255, 255, 255, 0.853);
 }
