@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #0F1C1B;
+    background-color: #0A0E11;
     font-family: 'Oswald', sans-serif;
     overflow-x: hidden;
 }
@@ -59,7 +59,7 @@ body {
     height: 40px;
     padding-top: 20px;
 
-    background-color:#0f1c1bed;
+    background-color:#0A0E11;
     z-index: 150;
 }
 
@@ -108,6 +108,16 @@ body {
 
 .promo {
     height: 100vh;
+}
+
+.promo__photo {
+    background-image: url(../img/image\ 1.jpg);
+    width: 300px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    margin-right: 40px;
+    margin-left: 250px;
 }
 
 .promo__wrapper {
@@ -203,7 +213,7 @@ body {
 
 .card__img {
     width: 500px;
-    height: 430px;
+    height: 230px;
 } 
 
 .card__description {
