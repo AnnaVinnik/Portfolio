@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <main class="container">
+            <aside class="sidebar">
+                <div class="sidebar__heading">
+                    <h2>I'm
+                        <br>a photographer
+                    </h2>
+                    <span>John Smith</span>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">Portfolio</li>
+                        <!-- <li class="nav__item">My skills</li> -->
+                        <li class="nav__item">About me</li>
+                        <li class="nav__item">Contacts</li>
+                    </ul>
+                </nav>
+            </aside>
+            <section class="main-slider">
+                <div class="portfolio card" id="Portfolio">
+                    <div class="portfolio-slider">
+                            <div class="slide" style="background-image: url(https://images.unsplash.com/photo-1580891756752-f163333bfd16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80);"></div>
+                            <div class="slide active" style="background-image: url(https://images.unsplash.com/photo-1605369572399-05d8d64a0f6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);"></div>
+                            <div class="slide" style="background-image: url(https://images.unsplash.com/photo-1658848588646-58417ec28548?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80);"></div>
+                            <div class="slide" style="background-image: url(https://images.unsplash.com/photo-1658575898948-4fde74967359?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);"></div>
+                            <div class="slide" style="background-image: url(https://images.unsplash.com/photo-1658344588642-8db0df0fcaaf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);"></div>
+                    </div>
+                </div>
+                <div class="about-me card card__container" id="About me">
+                    <div class="about-me__img"></div>
+                    <h2 class="about-me__heading">Some facts about me:</h2>
+                    <p class="about-me__right-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi maiores numquam quia mollitia. Ipsum explicabo officia expedita maiores voluptas dolorem?
+                    </p>
+                    <div class="about-me__img_right"></div>
+                    <h2 class="my-story__heading">My story:</h2>
+                    <p class="my-story">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum praesentium illo quas aliquid numquam aperiam repellat sequi illum debitis quidem quo id odio, ea voluptates commodi voluptate nisi dolore ipsa architecto delectus eveniet veritatis assumenda. Exercitationem, ipsam magni. Autem deleniti eius optio dolorem delectus quod facilis eum qui debitis, minima numquam! </p>
+                </div>
+                <div class="contacts card card__container" id="Contacts">
+                    <h2 class="contacts__heading">You can contact me by</h2>
+                    <p>phone: +123456789 </p>
+                    <p>email: mymail@gmail.com</p>
+                    <span>or</span>
+                    <form action="" class="form frame">
+                        <laber class="input__label" for="name">Name:</laber>
+                        <input
+                            class="input"
+                            type="text"
+                            name="name"
+                            placeholder="John Smith"
+                        >
+                        <label class="input__label" for="phone">Phone:</label>
+                        <input
+                            class="input"
+                            type="text"
+                            name="phone"
+                            placeholder="+123456789"
+                        >
+                        <label class="input__label" for="comment">Comment:</label>
+                        <textarea class="input input_big" name="comment" placeholder="Your comment"></textarea>
+                        <br>
+                        <input type="submit" value="Send it" class="form__button">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <script src="script/app.js"></script>
+    </body>
+</html>

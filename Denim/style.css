@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans";
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18.77px;
+}
+
+.main-nav li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: inherit;
+}
+
+.site-nav {
+    flex-grow: 1;
+    width: 400px;
+    flex-wrap: wrap;
+}
+
+.site-nav__list {
+    width: 197px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    flex-grow: 1;
+    justify-content: center;
+    display: flex;
+}
+
+.logo__img {
+    width: 75px;
+    height: 17px;
+    
+}
+
+.user-nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    width: 400px;
+}
+
+.user-nav__item {
+    padding: 0 20px;
+}
+
+/* main */
+
+.promo {
+    background-color: #F1F2F4;
+}
+
+.promo__content {
+    display: flex;
+    justify-content: center;
+}
+
+.promo__arrow {
+    margin-top: auto;
+    margin-bottom: 50px;
+}
+
+.promo__text {
+    /* flex-grow: 1; */
+    width: 470px;
+    text-align: start;
+    margin-left: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text_small_grey {
+    color: #727A82;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0;
+    padding: 0;
+}
+
+.promo__text__big {
+    text-transform: uppercase;
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 193px;
+    margin: 0;
+    padding: 0 0 20px;
+}
+
+.promo__img {
+    width: 430px;
+    height: 517px;
+    object-fit: cover;
+    position: relative;
+    margin: 50px;
+}
+
+.promo__img_main {
+    width: 430px;
+    height: 517px;
+    object-fit: cover;
+}
+
+.promo__img::before {
+    display: block;
+    content: "";
+    width: 232px;
+    height: 176px;
+    background-image: url("promo__background.png");
+    position: absolute;
+    left: -50px;
+    top: -50px;
+}
+
+.promo__img::after {
+    display: block;
+    content: "";
+    width: 232px;
+    height: 176px;
+    background-image: url("promo__background.png");
+    position: absolute;
+    right: -100px;
+    bottom: -20px;
+    transform: rotate(90deg);
+}
+
+.button {
+    background-color: #151C22;
+    color:  #FFFFFF;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 27px 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.bestsellers {
+    margin: 15px auto;
+}
+
+.section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section__header a {
+    text-decoration: underline;
+}
+
+.grid__items {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.grid__item {
+    margin-right: 30px;
+}
+
+.grid__item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.grid__item_name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.bestsellers__item_price {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.news {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.news__content {
+    display: flex;
+    margin-top: 30px;
+}
+
+.news__img-column {
+    width: 700px;
+    height: 370px;
+}
+
+.news__text-column {
+    padding: 50px 45px 15px 40px;
+    background-color: #F1F2F4;
+    position: relative;
+    z-index: 10;   
+}
+
+.news__text {
+    margin-top: 10px;
+}
+
+.news__button {
+    padding: 27px 45px;
+    margin-top: 20px;
+}
+
+.category {
+    margin-bottom: 100px;
+}
+
+.footer {
+    background-color: #151C22;
+    padding: 50px;
+}
+
+
+.footer__logo_img {
+    margin: 0 auto 30px; 
+    display: block;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__list_item  a{
+    padding: 0 15px;
+    color: white;
+}

@@ -45,3 +45,24 @@ function startAnimation() {
         promo.style.opacity = "1";
     }, 10 );
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('form');
+    form.addEventListener('submit', formSend);
+
+    async function formSend(event) {
+        event.preventDefault();
+
+        let formData = new FormData(form);
+        alert(formData);
+
+        let response = await fetch('sendmail.php', {
+            method: 'POST',
+            body: formData
+        });
+
+        if (response.ok) {
+            alert("Yep");
+        }
+    }
+})
