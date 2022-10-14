@@ -378,3 +378,24 @@ body {
     margin-bottom: 5px;
     color: rgba(255, 255, 255, 0.853);
 }
+
+.skills__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.skills__item {
+    color: #cbcbcb;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.skills__item::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #eed186;
+    opacity: 0.8;
+}

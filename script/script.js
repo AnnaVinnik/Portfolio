@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
 
         let formData = new FormData(form);
-        alert(formData);
 
         let response = await fetch('sendmail.php', {
             method: 'POST',
@@ -63,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (response.ok) {
             alert("Yep");
+            form.reset()
         }
     }
 })
